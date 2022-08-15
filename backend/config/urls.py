@@ -17,5 +17,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+     path("", views.songs_list),
+    path("<int:pk>/", views.song_detail),
 ]
